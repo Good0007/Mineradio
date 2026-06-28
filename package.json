@@ -42,6 +42,7 @@
       "identity": "-",
       "hardenedRuntime": false,
       "gatekeeperAssess": false,
+      "notarize": false,
       "minimumSystemVersion": "11.0",
       "electronLanguages": ["zh-CN", "en"],
       "extendInfo": {
