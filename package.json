@@ -8,10 +8,10 @@
   "private": true,
   "scripts": {
     "start": "electron .",
-    "build:mac": "electron-builder --mac",
-    "build:mac:dir": "electron-builder --mac dir",
-    "build:win": "electron-builder --win nsis",
-    "build:win:dir": "electron-builder --win dir"
+    "build:mac": "electron-builder --mac --publish never",
+    "build:mac:dir": "electron-builder --mac dir --publish never",
+    "build:win": "electron-builder --win nsis --publish never",
+    "build:win:dir": "electron-builder --win dir --publish never"
   },
   "build": {
     "appId": "com.mineradio.desktop",

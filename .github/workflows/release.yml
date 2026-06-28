@@ -30,7 +30,7 @@ jobs:
       - name: Build macOS (${{ matrix.arch }})
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
-        run: npx electron-builder --mac --${{ matrix.arch }}
+        run: npx electron-builder --mac --${{ matrix.arch }} --publish never
 
       - name: Rename artifacts (apple / intel)
         run: node build/rename-mac-artifacts.js
@@ -61,7 +61,7 @@ jobs:
         run: npm install
 
       - name: Build Windows
-        run: npx electron-builder --win nsis --x64
+        run: npx electron-builder --win nsis --x64 --publish never
 
       - name: Upload Setup
         uses: softprops/action-gh-release@v2
